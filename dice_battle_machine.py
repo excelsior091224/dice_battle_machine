@@ -45,10 +45,14 @@ def decide_dice_num():
         dice_num = input("何個のダイスを使いますか？ 数字を入力してください。例:2d6の場合「2」:")
         try:
             dice_num = int(dice_num)
-            print(str(dice_num) + "個")
-            break
         except ValueError:
             print("数字を入力してください。")
+        else:
+            if dice_num <= 0:
+                print("1以上の数字を入力してください")
+            else:
+                print(str(dice_num) + "個")
+                break
 
 def decide_dice_size():
     while True:
@@ -56,10 +60,14 @@ def decide_dice_size():
         dice_size = input("何面のダイスを使いますか？数字を入力してください。例:2d6の場合「6」:")
         try:
             dice_size = int(dice_size)
-            print(str(dice_size) + "面")
-            break
         except ValueError:
             print("数字を入力してください。")
+        else:
+            if dice_size <= 0:
+                print("1以上の数字を入力してください")
+            else:
+                print(str(dice_size) + "面")
+                break
 
 def decide_round_num():
     while True:
@@ -67,10 +75,14 @@ def decide_round_num():
         round_num = input("何ラウンドの試合ですか？ 数字を入力してください:")
         try:
             round_num = int(round_num)
-            print(str(round_num) + "ラウンド")
-            break
         except ValueError:
             print("数字を入力してください")
+        else:
+            if round_num <= 0:
+                print("1以上の数字を入力してください")
+            else:
+                print(str(round_num) + "ラウンド")
+                break
 
 def decide_hp():
     while True:
@@ -78,10 +90,14 @@ def decide_hp():
         hp = input("初期ヒットポイントを数字で入力してください:")
         try:
             hp = int(hp)
-            print("HP" + str(hp))
-            break
         except ValueError:
             print("数字を入力してください")
+        else:
+            if hp <= 0:
+                print("1以上の数字を入力してください")
+            else:
+                print("HP" + str(hp))
+                break
 
 def decide_down_hp():
     while True:
@@ -89,10 +105,14 @@ def decide_down_hp():
         down_hp = input("いくつのダメージごとにダウンさせますか？ 数字を入力してください:")
         try:
             down_hp = int(down_hp)
-            print(str(down_hp) + "HPのダメージごとにダウン")
-            break
         except ValueError:
             print("数字を入力してください")
+        else:
+            if down_hp <= 0:
+                print("1以上の数字を入力してください")
+            else:
+                print(str(down_hp) + "HPのダメージごとにダウン")
+                break
 
 def dice(a, b):
     global dice_roll
