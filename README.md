@@ -15,7 +15,7 @@ Python3（Python 3.6.8でテスト済み）
 1. dice_battle_machine.pyをダウンロードし、任意のディレクトリに配置してください。
 2. MacもしくはLinuxではターミナルを、Windowsではコマンドプロンプトを起動してください。
 3. dice_battle_machine.pyを配置したディレクトリに移動してください。
-4. Windowsの場合`python Hangman_A.py`、MacもしくはLinuxの場合`python3 Hangman_A.py`と入力してください。
+4. Windowsの場合`python dice_battle_machine.py`、MacもしくはLinuxの場合`python3 dice_battle_machine.py`と入力してください。
 5. 「試合を開始する場合「試合開始」と入力してください:」と表示されるので、「試合開始」と入力してください。
 6. 「タイトルコールを入力してください:」と入力されるので、試合のタイトル（例:『A vs B』）を入力してください。
 7. 「赤コーナーの選手の名前を入力してください:」と入力されるので、選手名（例:A）を入力してください。
