@@ -451,13 +451,22 @@ def fight():
         else:
             print("「ラウンド数-ターン数」が間違っています。正しくは" + str(current_round) + "-" + str(current_turn) + "です。")
 
-start()
-title_call()
-decide_red_name()
-decide_blue_name()
-decide_dice_num()
-decide_dice_size()
-decide_round_num()
-decide_hp()
-decide_down_hp()
-fight()
+def match():
+    continue_or_exit = ""
+    
+    while continue_or_exit != "q":
+        start()
+        title_call()
+        decide_red_name()
+        decide_blue_name()
+        decide_dice_num()
+        decide_dice_size()
+        decide_round_num()
+        decide_hp()
+        decide_down_hp()
+        fight()
+        continue_or_exit = input("もう1試合やりますか？　続ける場合「q」以外の文字を、終了する場合「q」を入力してください。:")
+        if continue_or_exit == "q":
+            break
+
+match()
