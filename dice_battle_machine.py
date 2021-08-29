@@ -221,6 +221,7 @@ class Match:
                         self.log_text += self.print_text
                         with open(self.log_title, mode='w') as f:
                             f.write(self.log_text)
+                        time.sleep(self.sleeptime)
                         break
 
             elif  blue_dice_sum > red_dice_sum:
@@ -265,6 +266,7 @@ class Match:
                         self.log_text += self.print_text
                         with open(self.log_title, mode='w') as f:
                             f.write(self.log_text)
+                        time.sleep(self.sleeptime)
                         break
 
             else:
