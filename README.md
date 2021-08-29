@@ -25,7 +25,7 @@ Python3（Python 3.8.10でテスト済み）
       1. Python3をインストールしてください。最新のものであることが望ましいです。
       2. コマンドプロンプトもしくはPowerShellを起動してください。
       3. コマンドプロンプトもしくはPowerShellにおいてcdコマンドを使ってdice_battle_machine.pyを配置したディレクトリに移動してください。
-      4. Windowsの場合`python dice_battle_machine.py`と入力して実行してください。
+      4. `python dice_battle_machine.py`と入力して実行してください。
    3. Windowsでコマンドプロンプト等の使用に慣れていない場合
       1. 「for_windows」ディレクトリ内の「dice_battle_machine.exe」を実行してください。
          * 注意: exe化にはPyInstallerを使用していますが、このソフトを使ってマルウェアをexe化する輩が多いせいで対策ソフト等にマルウェアとして誤検出される可能性があります。その場合、大変申し訳ありませんが2の方法を使って実行してください。
