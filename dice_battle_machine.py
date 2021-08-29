@@ -219,7 +219,7 @@ class Match:
                         self.print_text = blue_ko + '\n'
                         print(self.print_text)
                         self.log_text += self.print_text
-                        with open(self.log_title, mode='w') as f:
+                        with open(self.log_title, mode='w', encoding='utf-8') as f:
                             f.write(self.log_text)
                         time.sleep(self.sleeptime)
                         break
@@ -264,7 +264,7 @@ class Match:
                         self.print_text = red_ko + '\n'
                         print(self.print_text)
                         self.log_text += self.print_text
-                        with open(self.log_title, mode='w') as f:
+                        with open(self.log_title, mode='w', encoding='utf-8') as f:
                             f.write(self.log_text)
                         time.sleep(self.sleeptime)
                         break
@@ -362,7 +362,7 @@ class Match:
                     self.print_text = hp_result + '\n' + red_judgment_win
                     print(self.print_text)
                     self.log_text += self.print_text
-                    with open(self.log_title, mode='w') as f:
+                    with open(self.log_title, mode='w', encoding='utf-8') as f:
                             f.write(self.log_text)
                     time.sleep(self.sleeptime)
                     break
@@ -370,7 +370,7 @@ class Match:
                     self.print_text = hp_result + '\n' + blue_judgment_win
                     print(self.print_text)
                     self.log_text += self.print_text
-                    with open(self.log_title, mode='w') as f:
+                    with open(self.log_title, mode='w', encoding='utf-8') as f:
                             f.write(self.log_text)
                     time.sleep(self.sleeptime)
                     break
@@ -378,7 +378,7 @@ class Match:
                     self.print_text = hp_result + '\n' + judgment_draw
                     print(self.print_text)
                     self.log_text += self.print_text
-                    with open(self.log_title, mode='w') as f:
+                    with open(self.log_title, mode='w', encoding='utf-8') as f:
                             f.write(self.log_text)
                     time.sleep(self.sleeptime)
                     break
