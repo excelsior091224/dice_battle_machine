@@ -411,6 +411,6 @@ MAX_ROUND = decide_max_round()
 title = make_title_call(red_boxer, blue_boxer, MAX_ROUND)
 print('\n')
 fight_datetime = datetime.now().strftime("%Y%m%d%H%M%S")
-log_title = FIGHT_LOG_DIR + '/' + fight_datetime + '_' + title
+log_title = FIGHT_LOG_DIR + '/' + fight_datetime + '_' + title + '.txt'
 match = Match(hp=HP, down_hp=DOWN_HP, red_boxer=red_boxer, blue_boxer=blue_boxer, title=title, log_title=log_title, max_round=MAX_ROUND, sleeptime=SLEEPTIME)
 match.fight()
