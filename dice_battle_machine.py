@@ -387,32 +387,37 @@ SLEEPTIME = 3
 
 # 対戦ログ保存フォルダ作成
 FIGHT_LOG_DIR = make_folder()
-# HP決定
-HP = decide_HP()
-# ダウンHP数決定
-DOWN_HP = decide_down_hp()
 
-# ダイスの個数決定
-dice_num = decide_dice_num()
-# ダイスの面数決定
-dice_size = decide_dice_size()
-# ダイス作成
-DICE = Dice(dice_num, dice_size)
-# print(dice.throw_dice())
+while True:
+    # HP決定
+    HP = decide_HP()
+    # ダウンHP数決定
+    DOWN_HP = decide_down_hp()
 
-# 赤コーナーのボクサー作成
-print('赤コーナーの選手を作成します')
-red_boxer = boxer_create()
-# 青コーナーのボクサー作成
-print('青コーナーの選手を作成します')
-blue_boxer = boxer_create()
+    # ダイスの個数決定
+    dice_num = decide_dice_num()
+    # ダイスの面数決定
+    dice_size = decide_dice_size()
+    # ダイス作成
+    DICE = Dice(dice_num, dice_size)
+    # print(dice.throw_dice())
 
-# ラウンド数決定
-MAX_ROUND = decide_max_round()
-# タイトル決定
-title = make_title_call(red_boxer, blue_boxer, MAX_ROUND)
-print('\n')
-fight_datetime = datetime.now().strftime("%Y%m%d%H%M%S")
-log_title = FIGHT_LOG_DIR + '/' + fight_datetime + '_' + title + '.txt'
-match = Match(hp=HP, down_hp=DOWN_HP, red_boxer=red_boxer, blue_boxer=blue_boxer, title=title, log_title=log_title, max_round=MAX_ROUND, sleeptime=SLEEPTIME)
-match.fight()
+    # 赤コーナーのボクサー作成
+    print('赤コーナーの選手を作成します')
+    red_boxer = boxer_create()
+    # 青コーナーのボクサー作成
+    print('青コーナーの選手を作成します')
+    blue_boxer = boxer_create()
+
+    # ラウンド数決定
+    MAX_ROUND = decide_max_round()
+    # タイトル決定
+    title = make_title_call(red_boxer, blue_boxer, MAX_ROUND)
+    print('\n')
+    fight_datetime = datetime.now().strftime("%Y%m%d%H%M%S")
+    log_title = FIGHT_LOG_DIR + '/' + fight_datetime + '_' + title + '.txt'
+    match = Match(hp=HP, down_hp=DOWN_HP, red_boxer=red_boxer, blue_boxer=blue_boxer, title=title, log_title=log_title, max_round=MAX_ROUND, sleeptime=SLEEPTIME)
+    match.fight()
+    continue_or_exit = input("もう1試合やりますか？　続ける場合「q」以外のキーを、終了する場合「q」を入力してください。:")
+    if continue_or_exit == 'q':
+        break
