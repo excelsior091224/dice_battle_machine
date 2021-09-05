@@ -73,7 +73,7 @@ Python 3 (tested with Python 3.8.10)
   3. If you are not familiar with using command prompts, etc. in Windows
      1. Run "dice_battle_machine.exe" in the "for_windows" directory.
         * Caution:PyInstaller is used for exeing, but because many people use this software to exe malware, it may be falsely detected as malware by anti-malware software.In that case, sorry about that, but you will have to use method 2 to do it.
-3. "表示言語を番号で選択してください。Please select the display language by number.　1:日本語(Japanese)　2:英語(English)" will be displayed, please select 1 or 2. Please select the display language by number.
+3. "表示言語を番号で選択してください。Please select the display language by number.　1:日本語(Japanese)　2:英語(English)" will be displayed, please select 1 or 2. Thereafter, it will be displayed in the language you have selected.
 4. "Enter the value of the player's HP (a number greater than or equal to 1):" will be displayed, please enter the HP (Hit Points, Strength) value as an integer greater than or equal to 1.
 5. "How many damage each do you want to take down? Please enter a number:" will be displayed, please enter a positive integer.
 6. "How many dice do you want to use? Please enter a number. Example: 2d6 for '2' :" will be displayed, please enter a positive integer.
