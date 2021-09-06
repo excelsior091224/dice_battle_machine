@@ -275,6 +275,7 @@ class Match:
         # スリープ秒数
         self.sleeptime = sleeptime
         self.jp_text = {
+            'match_start':"{}\n試合開始!\n\n",
             'round_turn':"{}ラウンド{}ターン目",
             'damage_result':"{}選手に{}のダメージ",
             'dice_result':"赤コーナー:{}:{}={}" + " " + "青コーナー:{}:{}={}",
@@ -291,6 +292,7 @@ class Match:
             'judgment_draw':"本試合、引き分けで終了。"
             }
         self.eng_text = {
+            'match_start':"{}\nLet the match begin!\n\n",
             'round_turn':"ROUND {} Turn {}",
             'damage_result':"{} damages for {}.",
             'dice_result':"Red corner:{}:{}={} Blue corner:{}:{}={}",
@@ -311,7 +313,7 @@ class Match:
         else:
             self.disp_text = self.eng_text
         # ターミナルに表示される文字列
-        self.print_text = title + '\n' + '試合開始!' + '\n' + '\n'
+        self.print_text = self.disp_text['match_start'].format(self.title)
         # ログファイルに書き込まれる文字列
         self.log_text = ''
         print(self.print_text)
