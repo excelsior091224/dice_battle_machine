@@ -140,6 +140,7 @@ def decide_dice_num(disp_lang):
                     print("Please enter a number greater than or equal to 1.")
                 elif dice_num == 1:
                     print(str(dice_num) + ' dice')
+                    return dice_num
                 else:
                     print(str(dice_num) + " dices")
                     return dice_num
