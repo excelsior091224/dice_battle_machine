@@ -29,7 +29,7 @@ Python3（Python 3.8.10でテスト済み）
       4. `python dice_battle_machine.py`と入力して実行してください。
    3. Windowsでコマンドプロンプト等の使用に慣れていない場合
       1. 「for_windows」ディレクトリ内の「dice_battle_machine.exe」を実行してください。
-         * 注意: exe化にはPyInstallerを使用していますが、このソフトを使ってマルウェアをexe化する輩が多いせいで対策ソフト等にマルウェアとして誤検出される可能性があります。その場合、大変申し訳ありませんが2の方法を使って実行してください。
+         * 注意: exe化にはnuitkaを使用していますが、対策ソフト等にマルウェアとして誤検出される可能性があります。その場合、大変申し訳ありませんが2の方法を使って実行してください。
 3. 「表示言語を番号で選択してください。Please select the display language by number.　1:日本語(Japanese)　2:英語(English)」と表示されるので、1か2で選択してください。以後は選択した言語で表示されます。
 4. 「選手のHPの値を入力してください（1以上の数字）:」と表示されるので、HP（ヒットポイント、体力）の値を1以上の整数で入力してください。
 5. 「いくつのダメージごとにダウンさせますか？ 数字を入力してください:」と表示されるので、正の整数で入力してください。
@@ -72,7 +72,7 @@ Python 3 (tested with Python 3.8.10)
      4. Type `python dice_battle_machine.py` and run it.
   3. If you are not familiar with using command prompts, etc. in Windows
      1. Run "dice_battle_machine.exe" in the "for_windows" directory.
-        * Caution:PyInstaller is used for exeing, but because many people use this software to exe malware, it may be falsely detected as malware by anti-malware software.In that case, sorry about that, but you will have to use method 2 to do it.
+        * Caution:nuitka is used for exeing, but it may be falsely detected as malware by anti-malware software.In that case, sorry about that, but you will have to use method 2 to do it.
 3. "表示言語を番号で選択してください。Please select the display language by number.　1:日本語(Japanese)　2:英語(English)" will be displayed, please select 1 or 2. Thereafter, it will be displayed in the language you have selected.
 4. "Enter the value of the player's HP (a number greater than or equal to 1):" will be displayed, please enter the HP (Hit Points, Strength) value as an integer greater than or equal to 1.
 5. "How many damage each do you want to take down? Please enter a number:" will be displayed, please enter a positive integer.
