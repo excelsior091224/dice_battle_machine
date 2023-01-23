@@ -1,6 +1,9 @@
 # dice_battle_machine
+
 ## 説明書（日本語版）
+
 ### このスクリプトについて
+
 これは、ダイスを使って2人のキャラクターを戦わせるゲームです。
 
 1回のターンごとに両者が指定された数・指定された面のダイスを振り、ダイスの出目が大きかったキャラクターが小さかったキャラクターに差分のダメージを与えます。
@@ -12,9 +15,11 @@
 勝敗はどちらかのHPが0以下になったらKO（ノックアウト）、そうでなければHPの数で判定されます。
 
 ### 使用言語
+
 Python3（Python 3.8.10でテスト済み）
 
 ### 遊び方
+
 1. ページの「Code」→「Download Zip」でファイル一式をダウンロードし、任意のディレクトリに配置してください。gitが使える環境ならばクローンでも大丈夫です。
 2. 実行方法
    1. MacまたはLinuxの場合
@@ -29,7 +34,7 @@ Python3（Python 3.8.10でテスト済み）
       4. `python dice_battle_machine.py`と入力して実行してください。
    3. Windowsでコマンドプロンプト等の使用に慣れていない場合
       1. 「for_windows」ディレクトリ内の「dice_battle_machine.exe」を実行してください。
-         * 注意: exe化にはnuitkaを使用していますが、対策ソフト等にマルウェアとして誤検出される可能性があります。その場合、大変申し訳ありませんが2の方法を使って実行してください。
+         * 注意: exe化にはセキュリティソフト対策としてブートローダーをリビルドしたPyinstallerを使用していますが、セキュリティソフトにマルウェアとして誤検出される可能性があります。その場合、大変申し訳ありませんが2の方法を使って実行してください。
 3. 「表示言語を番号で選択してください。Please select the display language by number.　1:日本語(Japanese)　2:英語(English)」と表示されるので、1か2で選択してください。以後は選択した言語で表示されます。
 4. 「選手のHPの値を入力してください（1以上の数字）:」と表示されるので、HP（ヒットポイント、体力）の値を1以上の整数で入力してください。
 5. 「いくつのダメージごとにダウンさせますか？ 数字を入力してください:」と表示されるので、正の整数で入力してください。
@@ -43,7 +48,9 @@ Python3（Python 3.8.10でテスト済み）
 13. 試合が終了したら「もう1試合やりますか？　続ける場合「q」以外のキーを、終了する場合「q」を入力してください。:」と表示されるため「q」以外のキーを入力すればもう1回試合ができます。「q」を入力したらプログラムが終了します。
 
 ## Instruction manual (English version)
+
 ### About this script
+
 This is a game that pits two characters against each other using dice.
 
 Each turn, both players roll a specified number of dice on a specified side, and the character with the larger die roll deals differential damage to the character with the smaller die roll.
@@ -55,24 +62,26 @@ The match ends when either character's HP (physical strength) drops below zero o
 Victory or defeat is judged by KO (knockout) if either player's hp falls below 0, otherwise by the number of HP.
 
 ### Language used
+
 Python 3 (tested with Python 3.8.10)
 
 ### How to play
+
 1. Download the complete set of files by clicking "Code" on the page, then "Download Zip", and place them in a directory of your choice. If you have access to git, you can clone it.
 2. How to execute
-  1. For Mac or Linux
-     1. Install Python 3. It is preferable to have the latest version.
-     2. Start the terminal.
-     3. In a terminal, use the cd command to navigate to the directory where you have placed dice_battle_machine.py.
-     4. Type `python3 dice_battle_machine.py` and run it.
-  2. If you are familiar with using the command prompt or PowerShell in Windows
-     1. Install Python 3. It is preferable to have the latest version.
-     2. Launch the command prompt or PowerShell.
-     3. Use the cd command at the command prompt or in PowerShell to navigate to the directory where you have placed dice_battle_machine.py.
-     4. Type `python dice_battle_machine.py` and run it.
-  3. If you are not familiar with using command prompts, etc. in Windows
-     1. Run "dice_battle_machine.exe" in the "for_windows" directory.
-        * Caution:nuitka is used for exeing, but it may be falsely detected as malware by anti-malware software.In that case, sorry about that, but you will have to use method 2 to do it.
+   1. For Mac or Linux
+      1. Install Python 3. It is preferable to have the latest version.
+      2. Start the terminal.
+      3. In a terminal, use the cd command to navigate to the directory where you have placed dice_battle_machine.py.
+      4. Type `python3 dice_battle_machine.py` and run it.
+   2. If you are familiar with using the command prompt or PowerShell in Windows
+      1. Install Python 3. It is preferable to have the latest version.
+      2. Launch the command prompt or PowerShell.
+      3. Use the cd command at the command prompt or in PowerShell to navigate to the directory where you have placed dice_battle_machine.py.
+      4. Type `python dice_battle_machine.py` and run it.
+   3. If you are not familiar with using command prompts, etc. in Windows
+      1. Run "dice_battle_machine.exe" in the "for_windows" directory.
+        * Caution:For exe, I use Pyinstaller, which is a rebuilt bootloader as an anti-security software measure, but there is a possibility that security software will falsely detect it as malware. In that case, we are very sorry, but please execute using method 2.
 3. "表示言語を番号で選択してください。Please select the display language by number.　1:日本語(Japanese)　2:英語(English)" will be displayed, please select 1 or 2. Thereafter, it will be displayed in the language you have selected.
 4. "Enter the value of the player's HP (a number greater than or equal to 1):" will be displayed, please enter the HP (Hit Points, Strength) value as an integer greater than or equal to 1.
 5. "How many damage each do you want to take down? Please enter a number:" will be displayed, please enter a positive integer.
